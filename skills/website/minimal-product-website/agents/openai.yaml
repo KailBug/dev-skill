@@ -1,0 +1,4 @@
+interface:
+  display_name: "极简科技官网生成"
+  short_description: "基于白底黑字、胶囊按钮与克制动效，生成适配品牌的响应式产品官网"
+  default_prompt: "使用 $minimal-product-website，为我的产品生成白底黑字、圆角卡片和克制动效的响应式官网。"

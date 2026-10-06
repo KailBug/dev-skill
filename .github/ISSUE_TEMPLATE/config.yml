@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: "私密安全反馈"
+    url: "https://github.com/KailBug/dev-skill/security/advisories/new"
+    about: "凭据、恶意资源或越权问题请勿公开粘贴敏感信息。"

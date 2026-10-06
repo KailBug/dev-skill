@@ -1,0 +1,13 @@
+{
+  "name": "dev-skill",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Development skills, documentation and validation tooling",
+  "license": "MIT",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "check:assets": "playwright test --config tests/playwright.config.mjs"
+  },
+  "devDependencies": { "@playwright/test": "1.63.0" }
+}

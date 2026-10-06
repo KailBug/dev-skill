@@ -1,0 +1,18 @@
+name: "新增或改进 Skill"
+description: "提出一个明确的使用场景"
+title: "[Skill] "
+body:
+  - type: textarea
+    id: scenario
+    attributes:
+      label: "需要完成的任务"
+      description: "描述受众、期望结果，以及现有 Skill 不足的地方。"
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: "适用范围与参考"
+      description: "建议分类、参考来源、必要资源和不应扩大到的任务。"
+    validations:
+      required: true

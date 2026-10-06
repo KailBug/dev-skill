@@ -1,0 +1,23 @@
+name: "缺陷反馈"
+description: "报告 Skill 指导、资源或安装问题"
+title: "[Bug] "
+body:
+  - type: input
+    id: skill
+    attributes:
+      label: "Skill 与仓库版本"
+      placeholder: "website/minimal-product-website，v0.1.0 或 commit"
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: "复现条件与步骤"
+      description: "提供请求、环境、预期与实际结果。不要粘贴凭据或个人数据。"
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: "验证与证据"
+      description: "检查结果、截图或具体来源链接；敏感问题使用 SECURITY.md 中的私密渠道。"

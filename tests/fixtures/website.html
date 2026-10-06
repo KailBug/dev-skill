@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Skill asset fixture</title>
+  <link rel="stylesheet" href="/skills/website/minimal-product-website/assets/design-system.css">
+  <style>.fixture-gap { height: 1100px; }</style>
+</head>
+<body class="mpw-site">
+  <nav class="mpw-nav">
+    <div class="mpw-nav-inner mpw-shell">笔记工具 <a class="mpw-button" href="#details">查看详情</a></div>
+  </nav>
+  <main class="mpw-shell">
+    <section class="mpw-hero mpw-container">
+      <div class="mpw-hero-copy">
+        <h1>把散落的想法，整理成真正有用的知识</h1>
+        <p class="mpw-hero-lead">中文与英文的笔记工具，帮助你记录、整理与分享每天的重要发现。</p>
+        <div class="mpw-actions">
+          <a class="mpw-button mpw-button-primary" href="#details">开始使用</a>
+          <a class="mpw-button" href="#faq">了解更多</a>
+          <button class="mpw-button" id="hidden-control" type="button" hidden>可选增强控件</button>
+        </div>
+      </div>
+      <div class="mpw-command mpw-showcase">
+        <header class="mpw-command-header">长命令布局示例</header>
+        <div class="mpw-command-row">
+          <code>example-command-with-a-very-long-name --workspace=project-with-a-long-name</code>
+          <button type="button">复制命令</button>
+        </div>
+      </div>
+      <div class="mpw-grid">
+        <article class="mpw-card"><h3>整理知识</h3><p>用简单方式记录重要想法。</p></article>
+        <article class="mpw-card"><h3>轻松查找</h3><p>较长中文说明同样应保持稳定、可读的换行。</p></article>
+        <article class="mpw-card"><h3>协作分享</h3><p>保持简洁的工作节奏。</p></article>
+      </div>
+    </section>
+    <div class="fixture-gap" aria-hidden="true"></div>
+    <section class="mpw-section mpw-container mpw-reveal" id="details">
+      <h2 class="mpw-section-title">滚动与焦点</h2>
+      <div class="mpw-card mpw-reveal" id="nested">
+        <button id="focus-target" class="mpw-button" type="button">可聚焦操作</button>
+      </div>
+    </section>
+    <section class="mpw-section mpw-container" id="faq">
+      <details class="mpw-faq"><summary>能通过键盘使用吗？</summary><p>支持原生展开和折叠。</p></details>
+    </section>
+  </main>
+  <script type="module">
+    import { initReveals } from '/skills/website/minimal-product-website/assets/reveal.js';
+    window.disposeFixture = initReveals();
+    window.fixtureReady = true;
+  </script>
+</body>
+</html>
